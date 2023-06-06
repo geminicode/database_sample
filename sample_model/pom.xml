@@ -39,14 +39,6 @@
 		    <version>6.2.2.Final</version>
 		</dependency>
 
-		<!--
-		<dependency>
-		    <groupId>org.eclipse.persistence</groupId>
-		    <artifactId>org.eclipse.persistence.jpa</artifactId>
-		    <version>4.0.1</version>
-		</dependency>
-		-->
-
 		<!-- test dependencies -->
 		<dependency>
 		    <groupId>org.junit.jupiter</groupId>
