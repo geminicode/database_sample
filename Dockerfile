@@ -7,7 +7,8 @@ ARG APP_DIR=/opt/app
 
 WORKDIR ${APP_DIR}
 
-COPY sample_app/target/sample_app*.jar ${APP_DIR}/java_app.jar
+# COPY sample_app/target/sample_app*.jar ${APP_DIR}/java_app.jar
+COPY sample_app/build/libs/sample_app.jar ${APP_DIR}/java_app.jar
 COPY start-app.sh ${APP_DIR}/start-app.sh
 
 CMD ["/opt/app/start-app.sh"]

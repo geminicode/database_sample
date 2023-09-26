@@ -3,8 +3,8 @@ services:
   java_app:
     container_name: java_app
     build: ./
-    depends_on:
-      - postgres
+    #depends_on:
+    #  - postgres
     expose:
       - "8080"
     ports:
@@ -21,6 +21,7 @@ services:
     profiles:
       - java_app
       - all
+      
   postgres:
     container_name: postgres
     image: postgres
@@ -50,5 +51,5 @@ services:
       - "8889:80"
     profiles:
       - pgadmin
-    volumes:
-      - ${temp}:/var/lib/pgadmin
+    #volumes:
+    #  - ${temp}:/var/lib/pgadmin

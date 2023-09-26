@@ -1,0 +1,3 @@
+rootProject.name = "database_sample"
+include 'sample_model'
+include 'sample_app'

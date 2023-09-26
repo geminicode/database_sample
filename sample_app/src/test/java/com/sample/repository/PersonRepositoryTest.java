@@ -9,9 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import com.sample.model.Person;
 
+import lombok.extern.log4j.Log4j2;
+
+@Log4j2
 @SpringBootTest
 public class PersonRepositoryTest {
 
+	
+	
 	@Autowired
 	PersonRepository repository;
 	
@@ -20,6 +25,7 @@ public class PersonRepositoryTest {
 		Person p = getPerson();
 		assertNotNull(p);
 		assertNotNull(p.getId());
+		log.info("done");
 	}
 
 	@Test
@@ -28,6 +34,7 @@ public class PersonRepositoryTest {
 		Person saved = repository.save(p);
 		assertEquals(p.getId(), saved.getId());
 		assertThat(saved.getCreatedOn()).isNotNull();
+		log.info("done");
 	}
 	
 	private Person getPerson() {
@@ -36,6 +43,7 @@ public class PersonRepositoryTest {
 				.firstName("Test")
 				.lastName("User")
 				.build();
+		log.info("getPerson");
 		
 		return p;
 	}
