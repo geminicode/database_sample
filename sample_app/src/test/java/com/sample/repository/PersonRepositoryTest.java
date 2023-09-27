@@ -7,16 +7,16 @@ import java.util.UUID;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import com.sample.SampleApplication;
 import com.sample.model.Person;
 
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
-@SpringBootTest
+@SpringBootTest( classes = SampleApplication.class)
 public class PersonRepositoryTest {
 
-	
-	
 	@Autowired
 	PersonRepository repository;
 	

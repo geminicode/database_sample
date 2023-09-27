@@ -8,8 +8,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
-@EnableJpaRepositories
-@EnableTransactionManagement
+//@EnableJpaRepositories
+//@EnableTransactionManagement
 @SpringBootApplication
 public class SampleApplication {
 

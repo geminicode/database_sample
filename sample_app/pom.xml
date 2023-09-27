@@ -66,6 +66,13 @@
 		    <groupId>org.postgresql</groupId>
 		    <artifactId>postgresql</artifactId>
 		</dependency>
+		
+		<!-- TODO: What is this for? This breaks JPA Repository Injection 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-indexer</artifactId>
+        </dependency>
+        -->
 
 		<!-- test dependencies -->
 		<dependency>
